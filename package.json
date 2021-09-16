@@ -1,0 +1,22 @@
+{
+  "name": "hellofresh-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meghana1997-star/Hellofresh-scss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meghana1997-star/Hellofresh-scss/issues"
+  },
+  "homepage": "https://github.com/meghana1997-star/Hellofresh-scss#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
