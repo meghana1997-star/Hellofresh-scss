@@ -1,0 +1,51 @@
+
+.helloFresh{padding: 41px 0;
+
+ h2 {
+    padding: 27px 0;
+    color: #423833;
+    font-size: 28px;
+    text-align: center;
+    text-transform: capitalize;    
+  }
+  
+  ul { 
+    margin-bottom: 27px;
+    width: 61%;
+    padding-left: 261px;
+    @include display_prop;
+
+    & li { 
+        text-align: center;
+        @include basis_prop(21%);
+
+        & figure {
+            width: 35%;
+            margin: 0 auto 27px;
+        }
+        h5 {
+            margin-bottom: 4px;
+            color: #4D3E4B;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        p { 
+            color: #384258;
+            font-size: 13px; 
+            line-height: 20px;
+        }      
+    }
+  }
+   .started {
+     text-align: center;
+        a {
+            @include border-color;
+            @include btn;
+            @include transition-ease;
+            &:hover{
+                @include color-btn;
+            }
+        }
+    }
+
+}

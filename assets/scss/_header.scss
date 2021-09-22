@@ -1,0 +1,91 @@
+header {
+    .wrapper  {
+        max-width: 1518px;
+        width: 98%;
+        padding: 9px 0;  
+        @include display_prop; 
+    }
+
+    h1 { 
+        display: inline-block;
+        vertical-align: top; 
+    }
+
+    .menu { 
+        display: inline-block;
+        
+        li { 
+            padding: 5px 10px;
+            font-size: 12px;
+            
+            &:first-child { padding-left: 20px; }
+
+            a {
+                padding: 5px 0;
+                color: #818181;    
+                font-weight: bold;
+                text-transform: capitalize; 
+                @include transition-ease;
+            }
+        }
+
+        .bar { text-indent: -9999px; }
+        .hamburger { display: none; }
+
+        .sub-menu {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+            &::after {
+                content: "\f107";
+                color: #7C7E80;
+                font-family: "FontAwesome";
+                font-weight: bold;
+            }
+           &:hover ul { display: block; }
+           &:hover::after {
+            content: "\f106";
+            color: #7C7E80;
+            font-family: "FontAwesome";
+            font-weight: bold;
+            @include transition-ease;
+          }
+            ul {
+                min-width: 160px;
+                display: none;
+                position: absolute;
+                z-index: 2;
+                background-color: #f9f9f9;
+
+                li {
+                    margin-left: 0; 
+                    display: block; 
+
+                    a {
+                        color: #7C7E80;
+                        padding: 12px 14px;
+                        text-decoration: none;
+                        display: block;
+                        &:hover{
+                            background-color: #f1f1f1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-right a{
+        @include border-color;
+        @include btn;
+        @include transition-ease;
+        &:hover{
+            @include color-btn;
+
+        }
+    }
+      
+    
+  
+    
+}

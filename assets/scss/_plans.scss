@@ -1,0 +1,36 @@
+.flexible-plan { position: relative; 
+    .wrapper {
+        max-width: 1518px;
+        width: 100%;
+    }
+    .flexible-text {
+        position: absolute;
+        top: 127px;
+        left: 50%;
+        text-align: center;
+        -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        h2 {
+            margin-bottom: 7px;
+            font-size: 38px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+        p {
+            width: 66%;
+            margin: 0 auto 30px;
+            font-size: 16px;
+            line-height: 25px;  
+        }
+        a{
+            @include color-btn;
+            @include btn;
+            @include transition-ease;
+            &:hover{
+                @include border-color;
+            }  
+        }
+
+    }
+}

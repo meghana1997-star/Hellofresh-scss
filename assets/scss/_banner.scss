@@ -1,0 +1,67 @@
+
+.banner-content {
+    background: linear-gradient(rgba(73, 15, 15, 0.144), rgba(255, 255, 255, 0.336)), url('./img/banner.jpg') 0px;
+    width: 100%;
+    height: 435px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48.125%);
+    text-align: center;
+    width: 100%;
+  
+  p{
+    width: 20%;
+    margin: 1.2rem auto 1.8rem auto;
+    line-height: 1.8rem;
+  }
+
+  h2{
+    font-size: 41px;
+    width: 24%;
+    margin: -10.8rem auto 1.8rem auto; 
+  }
+
+  a{
+    @include color-btn;
+    @include btn;
+    @include transition-ease;
+    &:hover{
+        @include border-color;
+    }
+  }
+}  
+
+ .scroll-down {
+    position: absolute;
+    bottom: 18px;
+    left: 49%;
+     a { text-indent: -9999px; 
+        &::before {
+            content: "\f107";
+            padding: 9px 13px;
+            border: 1px solid #000000;
+            border-radius: 47%;
+            background-color: #FFFFFF;
+            color: #000000;
+            cursor: pointer;
+            float: right;
+            font-size: 20px;
+            font-family: "FontAwesome";
+            text-indent: 0;
+            @include transition-ease;
+        }
+    }
+  }
+
+  
+
+  
+
+

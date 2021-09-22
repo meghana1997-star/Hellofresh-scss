@@ -1,0 +1,47 @@
+$white-color : #fff;
+$light-green-color : #476b2d;
+$btn-border-color: #9aad8c;
+
+
+@mixin display_prop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin basis_prop($value) {
+    -ms-flex-preferred-size: $value;
+    flex-basis: $value;
+}
+
+@mixin color-btn {
+    color: $white-color;
+    background: $light-green-color;
+}
+
+@mixin btn {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 6%;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+@mixin border-color{
+    border: 1px solid $btn-border-color;
+    color: $btn-border-color
+}
+
+
+
+

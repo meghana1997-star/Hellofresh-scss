@@ -1,0 +1,55 @@
+@media only screen and (max-width: 995px) {
+    
+    
+    .banner{
+        h2{
+            width: 30%;
+            padding-top: 50px;
+        }
+        p{
+            width: 31%;
+            font-size: 22px;
+        }
+    }
+
+    .helloFresh{
+        h2{
+            font-size: 42px;
+        }
+        ul{
+            flex-direction: column;
+            padding-left: 185px;
+            li{
+                margin-top: 52px;
+                h5{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        .started{
+            a{
+                padding: 22px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .inside-box{
+        figure img{
+            height: 343px;
+        }
+    }
+
+    .slider-section{
+        padding-top: 87px;
+    }
+
+    .flexible-plan{
+        figure img{
+            height: 272px;
+        }
+    }
+}
